@@ -1,0 +1,45 @@
+ *{
+      margin: 0px;
+      padding: 0px;
+
+    }
+    body{
+     
+     
+
+      background:linear-gradient(90deg,#eeece8  , rgb(120, 120, 119) 80%);
+    
+    }
+   
+
+.card {
+  box-shadow: 1px 4px 8px 0 rgba(0,0,0,0.9);
+  transition: 0.4s;
+  display: inline-block;
+  width: 19%;
+
+  margin: 30px;
+  border-radius: 5px;
+  font-family: 'Pangolin', cursive; 
+  color: black;
+   
+}
+img{width:100%;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+
+
+}
+.main{margin-left: 50px;}
+
+
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  
+  text-align: center;
+}

@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    
+    background-image: url(../static/vet.jpg);
+    background-size:cover;
+  }
+  
+  /* Header/logo Title */
+  .header {
+    padding: 80px;
+    text-align: center;
+    color: white;
+    opacity: 0.8;
+  }
+  
+  /* Increase the font size of the heading */
+  .header h1 {
+    font-size: 60px;
+  }
+  .header h2 {
+    font-size: 40px;
+    
+  }
+  

@@ -1,0 +1,122 @@
+body 
+{
+        background-image: url("https://www.missionridgevet.com/wp-content/uploads/sites/6/2017/05/allthepets.jpg");
+        background-repeat: no-repeat;
+        background-color:white;
+        opacity: 0.8;
+        background-size: 65% 85%; 
+}
+fieldset 
+{
+        border: 1px solid rgba(20,20,20,0.2);
+        box-sizing: border-box;
+        border-radius: 10px;
+        word-wrap: inherit;
+        display: inline-block;
+        background-color: rgba(209, 205, 201,0.2);
+        margin-top: -20px;
+    
+}
+
+		}
+.container
+{
+    text-align: right;
+    padding-left: -10px;
+    margin-right: 110px;
+    margin-top: 45px;
+}
+input, select
+{
+    margin: 8px;
+    border: none;
+    height: 20px;
+    width: 180px;
+    background-color: initial;
+    font-family: "courier new";
+    font-size: 13px;
+
+}
+#upload
+{
+    height: 40px;
+    width: 120px;
+    margin-left: -50px;
+    font-size: 15px;
+    color: #333;
+    background-color: rgb(175,248,118);
+    font-weight: bolder;
+    border-radius: 19px;
+    margin-top: 8px;
+}
+#selct
+{
+    margin-left: 1000px;
+}
+#select:hover, #upload:hover
+{
+    color: white;
+    background-color: black;
+}
+#pic
+{
+    padding-right: 150px;
+    
+}
+.field
+{
+     border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+h2
+{
+    font-family: 'Kaushan Script', cursive;
+    text-align: left;
+    color: rgba(20,20,20,0.8);
+    font-size: 32px;
+    margin-left: 10px;
+    margin-top: -20px;
+    font-style: italic;
+}
+span
+{
+    font-family: 'Pangolin', cursive;
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: bold;
+    float: left;
+    color: rgba(20,20,20,0.8);
+}
+legend
+{
+        color: rgba(20,20,20,0.8);
+        font-size: 38px;
+        margin-bottom: 2px; 
+        padding: 5px;
+        font-family: 'Pangolin', cursive;
+        text-shadow: 1px 1px rgba(0,0,0,0.5);
+}
+::placeholder
+{
+    color: black;
+    font-family: "courier new";
+}
+h1
+{
+    float: left;
+    margin-top: -30px;
+    margin-left: 10px;
+    font-family: 'Pangolin',cursive;
+    font-size: 20px;
+    color: black;
+    text-shadow: 1px 1px brown;
+}
+p
+{
+    font-family: "Kaushan Script",cursive;
+    float: left;
+    text-shadow: 1px 1px brown;
+    font-size: 38px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 520px;
+}

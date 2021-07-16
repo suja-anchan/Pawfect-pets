@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../static/sellpet.css">
+	<title>Pet & Owner Details</title>
+
+</head>
+<body>
+
+	
+<div class="container">
+<form id="petDetailsForm"  action=/sellpets method="POST" enctype="multipart/form-data">
+	<a href="/home"><h1><i class="fas fa-arrow-left"></i>Back </h1></a>
+	<p>Make someone a happy pet owner today!</p>
+<fieldset>
+        <legend>Pet & Owner Details</legend>
+        <label for="pets"><span>Choose your pet: </span> </label>
+        <select class="field" required="select" id="sellpets" name="sell">                
+                <option value="Choose" disabled="select">Choose here</option>
+                <option value="Dog">Dog</option>
+                <option value="Cat">Cat</option>
+                <option value="Bird">Bird</option>
+                <option value="Fish">Fish</option>
+            </select><br>
+            <span id="pic">Pet Picture:</span><input type="file" name="photo"><br><br><br>
+			<img id="myimg"><label id="upProgress"></label><br><br>
+			<span>Breed: </span><input class="field" id="breed" type="text" name="breed"><br>
+            <span>Age: </span> <input class="field" type="number" name="age" placeholder="in months" id="age" ><br>
+            <span>Weight: </span> <input class="field" type="number" name="weight" placeholder="in kilograms" id="weight" > <br>
+            <span>Height: </span> <input class="field" type="number" name="height" placeholder="in centimeters" id="height"><br>
+             <span>Cost: </span> <input class="field" type="number" name="price" id="price" ><br>
+            <span>Birthday: </span><input class="field" type="date" name="birthday" placeholder="dd/mm/yyyy" id="birthday"><br>
+			<span>Owner Name:</span> <input class="field" id="namebox" name="owner" type="text"><br>
+			<span>Contact number:</span> <input class="field" id="contact" name="contact" type="number"><br>
+			<span>E-mail:</span> <input class="field" id="mail" name="email" type="email"><br>
+			<!--<span>Address:</span> <input class="field" id="address" type="address"><br>			 -->
+			<button id="upload">Submit <i class="fas fa-paw"></i></button><br>          
+        </fieldset>
+       </form>
+</div>
+<!--<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+
+<script id="MainScript">
+var ImgName, ImgUrl;
+var files=[];
+var reader;
+var breed,age,birthday,height;
+var weight,contact,price;
+var mail;
+
+var firebaseConfig = {
+    apiKey: "AIzaSyBeDDv1dKRZxDzUD_oN48hl1xwmyYaJwH4",
+    authDomain: "petdetailsfinal.firebaseapp.com",
+    databaseURL:"https://petdetailsfinal-default-rtdb.firebaseio.com",
+    projectId: "petdetailsfinal",
+    storageBucket: "petdetailsfinal.appspot.com",
+    messagingSenderId: "863760380067",
+    appId: "1:863760380067:web:651f1beef0c2fab9388f16"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  /*document.getElementById("select").onclick=function(e){
+  	var input=document.createElement('input');
+  	input.type='file';
+
+  	input.onchange=e=>{
+  		files=e.target.files;
+  		reader= new FileReader();
+  		reader.onload=function(){
+  			document.getElementById("myimg").src=reader.result;
+  		}
+  		reader.readAsDataURL(files[0]);
+
+  	}
+  	input.click();
+  }
+  	document.getElementById('upload').onclick=function(){
+  		var sel=document.getElementById('sellpets');
+  		var pet=sel.options[sel.selectedIndex].text;
+  	//	console.log(pet);
+  		ImgName=document.getElementById('namebox').value;
+  		breed=document.getElementById('breed').value;
+  		age=document.getElementById('age').value;
+  		birthday=document.getElementById('birthday').value;
+  		height=document.getElementById('height').value;
+  		weight=document.getElementById('weight').value;
+  		contact=document.getElementById('contact').value;
+  		mail=document.getElementById('mail').value;
+  		price=document.getElementById('price').value;
+  		//address=document.getElementById('address').value;
+  		var uploadTask=firebase.storage().ref('Images/'+ImgName+'.png').put(files[1]);
+
+  		uploadTask.on('state_changed',function(snapshot){
+  			var progress=(snapshot.byteTransferred / snapshot.totalBytes)*100;
+  			//document.getElementById('upProgress').innerHTML='Upload'+progress+'%';
+  		},
+
+  		function(error){
+  			alert('error');
+  		},
+  			function(){
+  				uploadTask.snapshot.ref.getDownloadURL().then(function(url){
+  					ImgUrl=url;
+  					//i=1
+
+  				var final=firebase.database().ref(`Pictures/${pet}`);
+  				final.push().set({
+ 					Name:ImgName,
+  					Link:ImgUrl,
+  					Breed:breed,
+  					Age:age,
+  					Birthday:birthday,
+  					Height:height,
+   					Weight:weight,
+   					Email:mail,
+   					Price:price,
+   					Contact:contact
+   					//Address:address
+  				});
+  				alert("Data uploaded successfully");
+  				document.getElementById('petDetailsForm').reset();
+  			}
+  		);
+  	});
+  }*/
+
+
+</script>--> 
+</body>
+</html>
